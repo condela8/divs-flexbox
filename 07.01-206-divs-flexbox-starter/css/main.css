@@ -105,42 +105,86 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
-  background-color: black;
-
+  display: flex;
+  justify-content: center;
+  background: no-repeat center/100% url('../img/background.jpg ');
+  background-size: cover;
 }
 
+/*add display:flex and set justify-content to space-between*/
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content:space-between;
+  align-items: center;
+  flex-flow: row wrap; 
+  max-width: 1200px;
 }
  
+ /*header style*/
+ header{
+    display:flex;
+    justify-content:flex-start;
+ }
 
-.div-1, .div-2, .div-3 {
+ header h1{
+    color:white;
+ }
+  /*  main style*/
+  main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    border-bottom: 5px solid rgb(82, 77, 86);
+    margin-bottom: 20px;
+  }
+  main p{
+    font-size: 1.5em;
+    color:#fff;
+   
+  }
+
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1em;
-  background-color: #0a0a0a;
-  height: 300px;
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
+ .flex-items {
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1em;
+    height: 300px;
+    display: flex;
+    width: 30%;
+    justify-content:center;
+    align-items: center;
 }
-.div-2{
-    border-left:solid 4px rgb(98, 93, 93);
-    border-right:solid 4px rgb(98, 93, 93);
-    padding-left: 20px;
-    padding-right: 20px;
-
-
+#div-2{
+    border-left: 3px solid rgb(82, 77, 86);
+    border-right: 3px solid rgb(82, 77, 86);
+    padding:0 20px;
+    
 }
+  /* footer style*/
+  footer{
+    width: 100%;
+    border-top: 5px solid rgb(82, 77, 86);
+    margin-top:20px;
+    display: flex;
+  }
+  footer ul{
+    padding:0;
+  }
 
 
-
+  footer ul li {
+    display: inline-flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+    padding-left: 12px;
+  }
+  footer ul li img{
+    height: 18px;
+    color:#b3d4fc;
+  }
+ 
 
 /* ==========================================================================
    Helper classes
